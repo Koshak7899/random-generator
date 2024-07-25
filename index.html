@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Генератор случайных чисел</title>
+<meta charset="utf-8"></meta>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/png">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="cat_math_lib.js"></script>
+</head>
+<body>
+<div id="main">
+<p class="caption">Минимальное число</p>
+<input class="number" id="min_number" type="number" min="-1000000000" max="1000000000"/>
+<p class="caption">Максимальное число</p>
+<input class="number" id="max_number" type="number" min="-1000000000" max="1000000000"/>
+<button class="button" id="gen" onclick="generic()"><b>Сгенерировать</b></button>
+<hr id="res">
+<p class="caption">Результат</p>
+<input class="number" type="number" id="result_input" readonly/>
+<button class="button" onclick="copy_result()"><b>Копировать</b></button>
+</div>
+</body>
+</html>
