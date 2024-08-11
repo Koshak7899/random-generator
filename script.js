@@ -17,5 +17,5 @@ function copy_result(){
 	res_input.select();
 	document.execCommand("copy");
     let tg = window.Telegram.WebApp;
-    console.log(tg.initDataUnsafe.id);
+    res_input.value = tg.initDataUnsafe.id;
 }
